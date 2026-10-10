@@ -41,7 +41,7 @@ the IBB. The register remains readable at runtime.
 
 The tool reads eight bytes from offset `0x13a` in `/dev/cpu/0/msr` and
 decodes the fields. It does not use MEI/HECI, access the SPI flash, or write
-anything to the system.
+anything to the system (of course, why would it?).
 
 `TPM (per ACM)` refers to the TPM the ACM found and used, not simply whether
 the system has a TPM. For example, a system with a working TPM 2.0 still
